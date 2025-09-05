@@ -1,17 +1,11 @@
-import express from "express"
+import { App } from "./app";
 
-const app = express();
+function bootstrap(){
 
-app.get("/", (request, response) => {
+    const app = new App();
+    app.start();
 
-    /*response.send("Hello World");*/
-    response.send({ mensagem: "Hello World"});
+}
 
-});/*primeiro precisa da rota*/
+bootstrap();
 
-
-app.listen(3000, () => {
-
-    console.log("Server is running on port 3000");
-    
-})
