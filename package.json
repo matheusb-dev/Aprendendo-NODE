@@ -1,0 +1,26 @@
+{
+  "name": "aprendendo-node",
+  "version": "1.0.0",
+  "description": "Apredendo NODE",
+  "scripts": {
+    "dev": "tsx  ./src/server.ts"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheusb-dev/Aprendendo-NODE.git"
+  },
+  "keywords": [],
+  "author": "matheusb.dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matheusb-dev/Aprendendo-NODE/issues"
+  },
+  "homepage": "https://github.com/matheusb-dev/Aprendendo-NODE#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
+}
