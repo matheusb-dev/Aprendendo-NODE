@@ -4,7 +4,8 @@ const app = express();
 
 app.get("/", (request, response) => {
 
-    response.send("Hello World");
+    /*response.send("Hello World");*/
+    response.send({ mensagem: "Hello World"});
 
 });/*primeiro precisa da rota*/
 
