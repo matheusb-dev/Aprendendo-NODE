@@ -1,4 +1,5 @@
-import express, {type Express } from "express";
+import express, { type Express } from "express";
+import { Routes } from "./routes";
 
 export class App{
 
@@ -6,6 +7,8 @@ export class App{
 
     constructor(){
         this.server = express();
+
+        new Routes(this.server);
     }
 
     public start(){

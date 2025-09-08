@@ -16,6 +16,7 @@ export class ExitsModule{
 
         const exitsService = new ExitsService();
         const exitsController = new ExitsController(exitsService);
+        
         this.router.post("/", exitsController.create);
         this.router.post("/", exitsController.getAll);
 

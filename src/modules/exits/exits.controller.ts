@@ -1,6 +1,5 @@
 import { type Request, type Response } from "express";
-import { v4 as uuid } from "uuid";
-import { Exit } from "./types";
+
 import { ExitsService } from "./exits.services";
 
 
@@ -13,7 +12,7 @@ export class ExitsController{
 
     }
     
-    create(request: Request, response: Response){
+    create = (request: Request, response: Response) => {
         const { userId } = request.body;
 
         const result = this.exitsService.create(userId);
@@ -21,7 +20,7 @@ export class ExitsController{
 
         
     }
-    getAll(_: Request, response: Response){
+    getAll = (_: Request, response: Response) => {
         const result =  this.exitsService.getAll();
         response.status(200).json(result);
     }
