@@ -1,6 +1,8 @@
-import { Router } from "express";
+import { response, type Express } from "express";
 
 export class Router{
 
-    
+    constructor(app: Express){
+       
+    }
 }
