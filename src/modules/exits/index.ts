@@ -1,20 +1,11 @@
 import { Router } from "express";
 
-interface Exit{
-    id: string;
-    userID: string;
-    createAt: Date;
-}
-
-export class ExitsModules{
+export class ExitsModule{
 
     router: Router;
 
-    exits = [];
-
     constructor(){
         this.router = Router();
-
-
     }
+
 }

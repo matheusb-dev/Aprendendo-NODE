@@ -1,4 +1,4 @@
-import express, { type Express } from "express"
+import express, {type Express } from "express";
 
 export class App{
 
@@ -8,19 +8,14 @@ export class App{
         this.server = express();
     }
 
-
-
-    public start() {
-
+    public start(){
         this.server.listen(3000, (error) => {
-
+            
             if(error){
                 console.error(error);
                 return;
             }
-
-        console.log("Server is running on port 3000");
-
+            console.log("Server is runing on port 3000")
         });
     }
 }
